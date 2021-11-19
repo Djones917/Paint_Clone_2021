@@ -14,7 +14,8 @@ const { body } = document;
 
 // Global Variables
 const canvas = document.createElement('canvas');
-
+canvas.id = 'canvas';
+const context = canvas.getContext('2d');
 let currentSize = 10;
 let bucketColor = '#FFFFFF';
 let currentColor = '#A51DAB';
