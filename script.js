@@ -66,8 +66,8 @@ let currentColor = '#A51DAB';
 // Create Canvas
 function createCanvas() {
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  context.fillStyle = ;
+  canvas.height = window.innerHeight - 50;
+  context.fillStyle = bucketColor;
   context.fillRect();
   body.appendChild(canvas);
 
