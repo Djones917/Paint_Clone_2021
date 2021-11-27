@@ -35,7 +35,8 @@ let isEraser = false;
 
 // Setting Brush Color
 brushColorBtn.addEventListener('change', () => {
-
+   isEraser = false;
+   currentColor = `#${brushColorBtn.value}`;
 });
 
 // Setting Background Color
@@ -44,14 +45,15 @@ bucketColorBtn.addEventListener('change', () => {
    createCanvas();
 });
 
-// // Eraser
-// eraser.addEventListener('click', () => {
-
-//   brushIcon.style.color = 'white';
-//   eraser.style.color = 'black';
-//   activeToolEl.textContent = 'Eraser';
-
-// });
+// Eraser
+eraser.addEventListener('click', () => {
+isEraser = true;
+brushIcon.style.color = 'white';
+eraser.style.color = 'black';
+activeToolEl.textContent = 'Eraser';
+currentColor = bucketColor;
+currentSize = 50;
+});
 
 // // Switch back to Brush
 // function switchToBrush() {
