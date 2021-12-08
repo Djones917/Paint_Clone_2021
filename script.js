@@ -28,10 +28,10 @@ let isEraser = false;
 
 // }
 
-// Setting Brush Size
-// brushSlider.addEventListener('change', () => {
-
-// });
+Setting Brush Size
+brushSlider.addEventListener('change', () => {
+  currentSize = brushSlider.value();
+});
 
 // Setting Brush Color
 brushColorBtn.addEventListener('change', () => {
