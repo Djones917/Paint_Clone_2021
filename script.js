@@ -24,11 +24,11 @@ let isEraser = false;
 // let drawnArray = [];
 
 // Formatting Brush Size
-// function displayBrushSize() {
+function displayBrushSize() {
 
-// }
+}
 
-Setting Brush Size
+// Setting Brush Size
 brushSlider.addEventListener('change', () => {
   currentSize = brushSlider.value();
 });
