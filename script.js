@@ -27,6 +27,8 @@ let isEraser = false;
 function displayBrushSize() {
   if (brushSlider.value < 10) {
      brushSize.textContent = `0${brushSlider.value}`;
+  } else {
+    brushSize.textContent = brushSlider.value;
   }
 }
 
