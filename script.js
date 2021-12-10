@@ -25,7 +25,9 @@ let isEraser = false;
 
 // Formatting Brush Size
 function displayBrushSize() {
-
+  if (brushSlider.value < 10) {
+     brushSize.textContent = `0${brushSlider.value}`;
+  }
 }
 
 // Setting Brush Size
