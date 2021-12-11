@@ -34,7 +34,8 @@ function displayBrushSize() {
 
 // Setting Brush Size
 brushSlider.addEventListener('change', () => {
-  currentSize = brushSlider.value();
+  currentSize = brushSlider.value;
+  displayBrushSize();
 });
 
 // Setting Brush Color
@@ -67,7 +68,8 @@ function switchToBrush() {
   eraser.style.color = 'white';
   currentColor = `#${brushColorBtn.value}`;
   currentSize = 10;
-  
+  brushSlider.value = 10;
+  displayBrushSize();
 }
 
 // Create Canvas
