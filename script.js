@@ -20,7 +20,7 @@ let currentSize = 10;
 let bucketColor = '#FFFFFF';
 let currentColor = '#A51DAB';
 let isEraser = false;
-// let isMouseDown = false;
+let isMouseDown = false;
 // let drawnArray = [];
 
 // Formatting Brush Size
