@@ -175,17 +175,17 @@ saveStorageBtn.addEventListener('click', () => {
   setTimeout(switchToBrush, 1500);
 });
 
-// // Load from Local Storage
-// loadStorageBtn.addEventListener('click', () => {
-//   if (localStorage.) {
-//     drawnArray = JSON(localStorage.);
+// Load from Local Storage
+loadStorageBtn.addEventListener('click', () => {
+  if (localStorage.getItem('savedCanvas')) {
+    drawnArray = JSON.parse(localStorage.savedCanvas);
 
-//   // Active Tool
-//     activeToolEl.textContent = 'Canvas Loaded';
-//     setTimeout(switchToBrush, 1500);
-//   } 
+  // Active Tool
+    activeToolEl.textContent = 'Canvas Loaded';
+    setTimeout(switchToBrush, 1500);
+  } 
 
-// });
+});
 
 // // Clear Local Storage
 // clearStorageBtn.addEventListener('click', () => {
