@@ -183,7 +183,10 @@ loadStorageBtn.addEventListener('click', () => {
   // Active Tool
     activeToolEl.textContent = 'Canvas Loaded';
     setTimeout(switchToBrush, 1500);
-  } 
+  } else {
+    activeToolEl.textContent = 'No Canvas Found';
+    setTimeout(switchToBrush, 1500);
+  }
 
 });
 
