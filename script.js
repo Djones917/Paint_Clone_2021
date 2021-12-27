@@ -192,7 +192,7 @@ loadStorageBtn.addEventListener('click', () => {
 
 // Clear Local Storage
 clearStorageBtn.addEventListener('click', () => {
-
+  localStorage.removeItem('savedCanvas');
   // Active Tool
   activeToolEl.textContent = 'Local Storage Cleared';
   setTimeout(switchToBrush, 1500);
