@@ -198,13 +198,13 @@ clearStorageBtn.addEventListener('click', () => {
   setTimeout(switchToBrush, 1500);
 });
 
-// // Download Image
-// downloadBtn.addEventListener('click', () => {
+// Download Image
+downloadBtn.addEventListener('click', () => {
 
-//   // Active Tool
-//   activeToolEl.textContent = 'Image File Saved';
-//   setTimeout(switchToBrush, 1500);
-// });
+  // Active Tool
+  activeToolEl.textContent = 'Image File Saved';
+  setTimeout(switchToBrush, 1500);
+});
 
 // Event Listener
 brushIcon.addEventListener('click', switchToBrush);
