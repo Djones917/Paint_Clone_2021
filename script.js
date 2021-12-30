@@ -200,7 +200,7 @@ clearStorageBtn.addEventListener('click', () => {
 
 // Download Image
 downloadBtn.addEventListener('click', () => {
-
+  downloadBtn.href = canvas.toDataURL('image/jpeg', 1.0);
   // Active Tool
   activeToolEl.textContent = 'Image File Saved';
   setTimeout(switchToBrush, 1500);
